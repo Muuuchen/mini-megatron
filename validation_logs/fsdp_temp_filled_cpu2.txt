@@ -1,0 +1,3 @@
+[Gloo] Rank [Gloo] Rank 01 is connected to  is connected to 11 peer ranks.  peer ranks. Expected number of connected peer ranks is : Expected number of connected peer ranks is : 11
+
+PASS fsdp: numerical/contract checks, not a performance claim

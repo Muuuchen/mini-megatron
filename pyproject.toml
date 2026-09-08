@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "megatron-mini-lab"
+version = "0.3.0"
+description = "TODO-driven Megatron lab: TP/SP/CP/PP/EP, ZeRO, FSDP/ZeRO-3, CPU offload, SAC and overlap"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.5,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[tool.setuptools.packages.find]
+include = ["megatron_mini*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["exercise: student exercises; opt in with --exercises"]

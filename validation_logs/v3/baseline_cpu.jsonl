@@ -1,0 +1,4 @@
+{"step": 0, "loss": 4.266984462738037, "step_ms": 15.513775999920654, "global_tokens_per_second": 8250.731478954876, "max_rank_peak_allocated_bytes": 0, "mode": "baseline", "tp": 1, "pp": 1, "dp": 1, "global_batch": 8, "warmup": true}
+{"step": 1, "loss": 4.190549850463867, "step_ms": 12.096354999926007, "global_tokens_per_second": 10581.700024576245, "max_rank_peak_allocated_bytes": 0, "mode": "baseline", "tp": 1, "pp": 1, "dp": 1, "global_batch": 8, "warmup": true}
+{"step": 2, "loss": 4.154806137084961, "step_ms": 11.49665000002642, "global_tokens_per_second": 11133.678071412614, "max_rank_peak_allocated_bytes": 0, "mode": "baseline", "tp": 1, "pp": 1, "dp": 1, "global_batch": 8, "warmup": false}
+steady_state_mean_step_ms=11.497 (first 2 steps excluded)

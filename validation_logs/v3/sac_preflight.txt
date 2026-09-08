@@ -1,0 +1,4 @@
+所需练习尚未实现，尚未启动分布式通信：
+  T67: Selective checkpoint operator policy (runtime/sac.py:42)
+  T68: SAC invocation and observed replay (runtime/sac.py:52)
+见 docs/TASKS.md；不要仅删除占位符，须通过对应验收。

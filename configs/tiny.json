@@ -1,0 +1,9 @@
+{
+  "vocab_size": 64,
+  "seq_len": 16,
+  "hidden_size": 32,
+  "num_heads": 4,
+  "num_layers": 4,
+  "ffn_size": 64,
+  "seed": 2026
+}

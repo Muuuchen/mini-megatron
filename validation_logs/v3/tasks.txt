@@ -1,0 +1,74 @@
+D1  T01  TODO  next-token mean CE                      training/loss.py:13
+D1  T02  TODO  DP/PP/TP group plan                     distributed/topology.py:46
+D1  T03  TODO  copy backward: TP SUM                   tensor_parallel/mappings.py:20
+D1  T04  TODO  reduce forward: TP SUM                  tensor_parallel/mappings.py:30
+D1  T05  TODO  column-parallel linear                  tensor_parallel/layers.py:32
+D1  T06  TODO  row-parallel linear                     tensor_parallel/layers.py:50
+D1  T07  TODO  vocab-parallel embedding                tensor_parallel/layers.py:71
+D1  T10  TODO  head-parallel attention                 model/parallel.py:29
+D1  T11  TODO  tensor-parallel MLP                     model/parallel.py:43
+D1  T12  TODO  pre-norm residual block                 model/parallel.py:59
+D1  T13  TODO  pipeline-local GPT stage                model/parallel.py:87
+D1  T15  TODO  microbatch accumulation                 training/schedules.py:17
+D1  T21  TODO  DP/TP/PP/CP/EP/EDP group plan           distributed/topology_v2.py:47
+D1  T51  TODO  RMSNorm                                 model/llama.py:11
+D1  T52  TODO  RoPE global positions                   model/llama.py:19
+D1  T53  TODO  GQA grouped Q-KV mapping                model/llama.py:28
+D1  T54  TODO  Real text and global token denominator  runtime/text.py:31
+D2  T08  TODO  vocab CE forward                        tensor_parallel/loss.py:21
+D2  T09  TODO  vocab CE backward                       tensor_parallel/loss.py:31
+D2  T14  TODO  DP gradient averaging                   training/grad.py:17
+D2  T22  TODO  SP gather backward                      sequence_parallel/mappings.py:13
+D2  T23  TODO  SP reduce-scatter forward               sequence_parallel/mappings.py:19
+D2  T24  TODO  SP MLP/residual layout                  sequence_parallel/block.py:12
+D2  T25  TODO  SP replicated gradient SUM              sequence_parallel/block.py:19
+D3  T26  TODO  CP KV gather backward                   context_parallel/attention.py:12
+D3  T27  TODO  CP global-mask attention                context_parallel/attention.py:22
+D3  T28  TODO  Ring online softmax merge               context_parallel/ring.py:11
+D3  T29  TODO  Ring KV circulation and backward        context_parallel/ring.py:22
+D3  T33  TODO  Activation rematerialization            runtime/recompute.py:9
+D3  T47  TODO  BF16/FP16 compute policy                runtime/precision.py:27
+D3  T48  TODO  Distributed unscale/overflow agreement  runtime/precision.py:37
+D3  T58  TODO  CP ring double-buffer overlap           runtime/overlap.py:62
+D3  T65  TODO  H2D/D2H ordering and transfer leases    offload/transfer.py:42
+D3  T66  TODO  Saved-activation CPU pack/unpack        offload/activations.py:38
+D3  T67  TODO  Selective checkpoint operator policy    runtime/sac.py:42
+D3  T68  TODO  SAC invocation and observed replay      runtime/sac.py:52
+D4  T16  TODO  GPipe forward and graph cache           pipeline_parallel/schedules.py:30
+D4  T17  TODO  GPipe reverse backward                  pipeline_parallel/schedules.py:44
+D4  T30  TODO  Noninterleaved 1F1B event plan          pipeline_parallel/planner.py:17
+D4  T31  TODO  Pipeline event executor                 pipeline_parallel/executor.py:24
+D4  T32  TODO  Virtual/interleaved pipeline plan       pipeline_parallel/planner.py:27
+D4  T34  TODO  DP bucket last-microbatch ready         runtime/overlap.py:30
+D4  T56  TODO  TP chunked communication overlap        runtime/overlap.py:46
+D4  T59  TODO  Typed pipeline transport adapter        pipeline_parallel/transport.py:34
+D5  T18  TODO  TP/PP-aware grad norm                   training/grad.py:32
+D5  T35  TODO  Flat buffer shard layout                optimizer/flat.py:28
+D5  T36  TODO  ZeRO-1 optimizer sharding               optimizer/zero.py:41
+D5  T37  TODO  ZeRO-2 reduce-scatter gradient          optimizer/zero.py:48
+D5  T38  TODO  FSDP materialize/release forward        fsdp/unit.py:21
+D5  T39  TODO  FSDP regather/reduce-scatter backward   fsdp/unit.py:33
+D5  T40  TODO  Per-block FSDP units                    fsdp/unit.py:67
+D5  T41  TODO  FSDP next-unit prefetch                 runtime/overlap.py:38
+D5  T61  TODO  Parameter residency lifecycle           memory/residency.py:33
+D5  T62  TODO  Explicit ZeRO-3 per-unit frontend       optimizer/zero3.py:20
+D5  T63  TODO  CPU optimizer/master/gradient shard     offload/optimizer.py:26
+D5  T64  TODO  CPU parameter staging and release       offload/parameters.py:26
+D5  T69  TODO  Full-shard SAC forward cache scope      fsdp/selective.py:23
+D5  T70  TODO  Full-shard selective replay backward    fsdp/selective.py:36
+D6  T42  TODO  MoE top2 router and balance loss        moe/router.py:10
+D6  T43  TODO  MoE permutation and routing metadata    moe/dispatch.py:20
+D6  T44  TODO  Variable AllToAll backward              moe/dispatch.py:36
+D6  T45  TODO  MoE weighted unpermutation              moe/dispatch.py:52
+D6  T46  TODO  Dense and expert gradient ownership     moe/layer.py:40
+D6  T57  TODO  EP dispatch/compute overlap             runtime/overlap.py:54
+D7  T19  TODO  same-topology checkpoint save           checkpoint.py:36
+D7  T20  TODO  same-topology checkpoint restore        checkpoint.py:48
+D7  T49  TODO  Role-aware synchronization and norm     runtime/grad_roles.py:26
+D7  T50  TODO  Sharded checkpoint manifest             runtime/checkpoint.py:22
+D7  T55  TODO  Compose v2 training runtime             training/engine_v2.py:47
+D7  T60  TODO  Offline flat checkpoint reshard         runtime/checkpoint.py:32
+D7  T71  TODO  ZeRO-3 CPU offload SAC composition      memory/integration.py:24
+D7  T72  TODO  Offload snapshot and owner consistency  offload/checkpoint.py:16
+
+72/72 个占位符未完成。无占位符不等于数值正确。

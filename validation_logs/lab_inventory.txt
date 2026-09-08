@@ -1,0 +1,31 @@
+case transport       needs=provided plumbing pending=0
+case topology        needs=T21 pending=1
+case sp              needs=T22,T23,T24,T25 pending=4
+case cp              needs=T26,T27 pending=2
+case ring            needs=T28,T29 pending=2
+case pipeline        needs=T30,T31 pending=2
+case interleaved     needs=T31,T32 pending=2
+case recompute       needs=T33 pending=1
+case bucket          needs=T34 pending=1
+case flat            needs=T35 pending=1
+case zero1           needs=T35,T36 pending=2
+case zero2           needs=T35,T37 pending=2
+case fsdp            needs=T35,T38,T39 pending=3
+case moe             needs=T42,T43,T44,T45,T46 pending=5
+case precision       needs=T47,T48 pending=2
+case roles           needs=T49 pending=1
+case model           needs=T51,T52,T53 pending=3
+case text            needs=T54 pending=1
+case overlap         needs=T41,T56,T57,T58 pending=4
+case reshard         needs=T60 pending=1
+case checkpoint      needs=T50 pending=1
+recipe dense_sp             world=2; integration TODO; inspect with --recipe dense_sp
+recipe dense_tp_zero2       world=4; integration TODO; inspect with --recipe dense_tp_zero2
+recipe long_context         world=2; integration TODO; inspect with --recipe long_context
+recipe pipeline_1f1b        world=2; integration TODO; inspect with --recipe pipeline_1f1b
+recipe pipeline_interleaved world=2; integration TODO; inspect with --recipe pipeline_interleaved
+recipe fsdp_recompute       world=2; integration TODO; inspect with --recipe fsdp_recompute
+recipe moe_ep               world=2; integration TODO; inspect with --recipe moe_ep
+recipe moe_ep_fsdp          world=4; integration TODO; inspect with --recipe moe_ep_fsdp
+recipe moe_tp_ep            world=4; integration TODO; inspect with --recipe moe_tp_ep
+recipe torch_fsdp2          world=2; integration TODO; inspect with --recipe torch_fsdp2

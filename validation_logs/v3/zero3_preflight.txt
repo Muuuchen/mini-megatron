@@ -1,0 +1,6 @@
+所需练习尚未实现，尚未启动分布式通信：
+  T35: Flat buffer shard layout (optimizer/flat.py:28)
+  T38: FSDP materialize/release forward (fsdp/unit.py:21)
+  T39: FSDP regather/reduce-scatter backward (fsdp/unit.py:33)
+  T62: Explicit ZeRO-3 per-unit frontend (optimizer/zero3.py:20)
+见 docs/TASKS.md；不要仅删除占位符，须通过对应验收。
